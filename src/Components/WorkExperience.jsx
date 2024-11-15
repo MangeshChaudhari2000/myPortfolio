@@ -14,7 +14,7 @@ const WorkExperience = () => {
       </motion.h2>
       <motion.div
         initial={{ opacity: 0 }}
-        whileHover={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
         className="space-y-8 p-10"
       >
