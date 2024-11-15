@@ -20,22 +20,22 @@ const Projects = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            whileFocus={{scale:1.05}}
+            whileHover={{ scale: 1.05 }}
             key={project.id}
             className="group relative overflow-hidden rounded-3xl"
           >
             <motion.img
-            whileFocus={{scale:1.1}}
+              whileHover={{ scale: 1.1 }}
               src={project.image}
               alt="projectImage"
               className="w-full h-full object-cover duration-500 group-hover:scale-110"
             />
             <motion.div
-            initial={{opacity:0}}
-            whileFocus={{opacity:1}}
-            transition={{duration:.5}}
-
-            className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 hover:opacity-100">
+              initial={{ opacity: 0 }}
+              whileHover={{ opacity:1 }}
+              transition={{ duration: 0.5 }}
+              className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg transition-opacity duration-500 hover:opacity-100"
+            >
               <h3 className="mb-2 text-xl">{project.name}</h3>
               <p className="mb-12 p-4">{project.description}</p>
               <a
