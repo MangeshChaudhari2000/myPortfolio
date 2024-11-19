@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <div className="mb-8 mt-20">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center flex-col">
         {/* <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -19,12 +19,30 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-white text-4xl my-20 font-bold"
+          className="text-white text-4xl mt-20 font-bold"
         >
           MANGES<span className="line-through font-extrabold">H C</span>HAUDHARI
         </motion.p>
+        <div className="flex justify-between w-full max-w-2xl mt-5 gap-4">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-white text-md font-sans"
+          >
+            chaudharimangesh78@gmail.com
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-white text-md font-sans"
+          >
+           +91- 9604688127
+          </motion.p>
+        </div>
       </div>
-      <div className="flex items-center justify-center gap-8">
+      <div className="flex items-center justify-center gap-8 mt-10">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (
           <motion.a
             initial={{ opacity: 0 }}

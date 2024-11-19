@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <section id="education" className="py-8">
+    <section id="education" className="py-8 ">
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
