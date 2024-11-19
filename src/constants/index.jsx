@@ -18,6 +18,7 @@ import PerformYard from "../assets/performYard.PNG";
 import MangeshEstate from "../assets/mangeshEstate.PNG";
 import calculator from "../assets/calculator.PNG";
 import busybuyContext from "../assets/busybuyContext.PNG";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -112,8 +113,8 @@ export const SKILLS = [
     experience: "3+ year",
   },
   {
-    icon: <SiFlutter className="text-4xl text-sky-400 lg:text-5xl" />,
-    name: "Flutter",
+    icon: <TbBrandFramerMotion className="text-4xl text-pink-600 lg:text-5xl" />,
+    name: "Framer motion",
     experience: "6+ month",
   },
   {
