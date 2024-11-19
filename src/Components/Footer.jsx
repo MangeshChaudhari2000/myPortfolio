@@ -7,14 +7,22 @@ const Footer = () => {
   return (
     <div className="mb-8 mt-20">
       <div className="flex items-center justify-center">
-        <motion.img
+        {/* <motion.img
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
           src={logo}
           width={200}
           className="my-20"
-        />
+        /> */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-white text-4xl my-20 font-bold"
+        >
+          MANGES<span className="line-through font-extrabold">H C</span>HAUDHARI
+        </motion.p>
       </div>
       <div className="flex items-center justify-center gap-8">
         {SOCIAL_MEDIA_LINKS.map((link, index) => (

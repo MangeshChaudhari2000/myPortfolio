@@ -22,7 +22,7 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1 }}
             key={project.id}
-            className="group relative overflow-hidden rounded-3xl"
+            className="group relative overflow-hidden rounded-3xl h-[400px] sm:h-auto"
           >
             <motion.img
               whileHover={{ scale: 1.1 }}

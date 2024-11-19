@@ -32,7 +32,8 @@ const Navbar = () => {
         <div className="flex justify-between gap-6">
           <div>
             <a href="#">
-              <img src={logo} alt="logo" width={150} />
+              {/* <img src={logo} alt="logo" width={150} /> */}
+              <p className="text-white text-lg font-bold z-50">MANGES<span className="line-through font-extrabold">H C</span>HAUDHARI</p>
             </a>
           </div>
           <div>
@@ -58,7 +59,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div>
             <a>
-              <img src={logo} width={90} className="z-50" alt="logo" />
+              {/* <img src={logo} width={90} className="z-50" alt="logo" /> */}
+              <p className="text-white text-lg font-bold z-50">MANGES<span className="line-through font-extrabold">H C</span>HAUDHARI</p>
+
             </a>
           </div>
           <div className="flex items-center">
