@@ -50,7 +50,8 @@ export const PROJECTS = [
     description:
       "A modern real estate application where users can add properties for sale or rent and view other properties with great filters for convenience. The app is built using React, Redux, MongoDB, Node.js, JWT, Google authentication, and Tailwind CSS",
     image: MangeshEstate,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/MangeshChaudhari2000/personal-portfolio",
+    demoLink:"https://mangeshestate.onrender.com/"
   },
   {
     id: 2,
@@ -59,6 +60,7 @@ export const PROJECTS = [
       "PerformYard is a performance management application that helps organizations streamline goal tracking, performance reviews, and employee feedback. It enables businesses to efficiently manage goals, conduct evaluations, and foster ongoing communication between managers and teams",
     image: PerformYard,
     githubLink: "https://github.com/MangeshChaudhari2000/PerformYardApp",
+    demoLink:"https://performyardapp.onrender.com/"
   },
 
   {
@@ -68,6 +70,7 @@ export const PROJECTS = [
       "A E-commerce application that fetches data from fakestoreapi, where User can  logi, add item to there cart & place there order",
     image: busybuyContext,
     githubLink: "https://github.com/MangeshChaudhari2000/busybuyContext",
+    demoLink:'https://busybuycontext.onrender.com/'
   },
   
 ];

@@ -30,12 +30,21 @@ const Projects = () => {
               alt="projectImage"
               className="w-full h-full object-cover bg-inherit duration-500 group-hover:scale-110"
             />
-            <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg hover:backdrop-brightness-75 transition-opacity duration-500 hover:opacity-100 p-4"
-            >
+            <motion.div className="absolute inset-0 flex flex-col items-center justify-center text-white opacity-0 backdrop-blur-lg hover:backdrop-brightness-75 transition-opacity duration-500 hover:opacity-100 p-4">
               <h3 className="mb-2 text-xl">{project.name}</h3>
               <p className="mb-4 text-center">{project.description}</p>
-              <div className="mt-auto"> {/* Added mt-auto to push the button down */}
+              <div className="mt-auto flex w-full justify-around">
+                {" "}
+                {/* Added mt-auto to push the button down */}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300 flex items-center justify-center"
+                >
+                  <span>Demo</span>
+                  <MdArrowOutward className="ml-2" />
+                </a>
                 <a
                   href={project.githubLink}
                   target="_blank"
