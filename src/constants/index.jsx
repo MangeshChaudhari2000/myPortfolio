@@ -51,7 +51,7 @@ export const PROJECTS = [
     description:
       "A modern real estate application where users can add properties for sale or rent and view other properties with great filters for convenience. The app is built using React, Redux, MongoDB, Node.js, JWT, Google authentication, and Tailwind CSS",
     image: MangeshEstate,
-    githubLink: "https://github.com/MangeshChaudhari2000/personal-portfolio",
+    githubLink: "https://github.com/MangeshChaudhari2000/MangeshEstate",
     demoLink:"https://mangeshestate.onrender.com/"
   },
   {
