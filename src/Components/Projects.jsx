@@ -37,7 +37,7 @@ const Projects = () => {
                 {" "}
                 {/* Added mt-auto to push the button down */}
                 <a
-                  href={project.githubLink}
+                  href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-white px-4 py-2 text-black hover:bg-gray-300 flex items-center justify-center"
