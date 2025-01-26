@@ -6,26 +6,25 @@ import {
   FaDiscord,
   FaInstagram,
   FaMicrosoft,
+  FaAws
 } from "react-icons/fa6";
+
+import { SiNextdotjs } from "react-icons/si";
+
 import { SiMicrosoftsqlserver } from "react-icons/si";
 import { SiCsharp } from "react-icons/si";
-import { SiFlutter } from "react-icons/si";
 
-import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
 import PerformYard from "../assets/performYard.PNG";
 import MangeshEstate from "../assets/mangeshEstate.PNG";
-import calculator from "../assets/calculator.PNG";
+import EduForge from "../assets/EduForge.PNG";
+import Nextjs from "../assets/nextjs.png";
+
 import busybuyContext from "../assets/busybuyContext.PNG";
 import { TbBrandFramerMotion } from "react-icons/tb";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 export const NAVIGATION_LINKS = [
@@ -47,21 +46,21 @@ export const HERO = {
 export const PROJECTS = [
   {
     id: 1,
+    name: "Eduforge",
+    description:
+      "Built a scalable Learning Management System using Next.js, Node.js, AWS, Stripe, and Docker, with authentication via Clerk and responsive design powered by Tailwind CSS.",
+    image: EduForge,
+    githubLink: "https://github.com/MangeshChaudhari2000/EduForge",
+    demoLink: "https://edu-forge-rouge.vercel.app/",
+  },
+  {
+    id: 2,
     name: "MangeshEstate",
     description:
       "A modern real estate application where users can add properties for sale or rent and view other properties with great filters for convenience. The app is built using React, Redux, MongoDB, Node.js, JWT, Google authentication, and Tailwind CSS",
     image: MangeshEstate,
     githubLink: "https://github.com/MangeshChaudhari2000/MangeshEstate",
-    demoLink:"https://mangeshestate.onrender.com/"
-  },
-  {
-    id: 2,
-    name: "Perform Yard",
-    description:
-      "PerformYard is a performance management application that helps organizations streamline goal tracking, performance reviews, and employee feedback. It enables businesses to efficiently manage goals, conduct evaluations, and foster ongoing communication between managers and teams",
-    image: PerformYard,
-    githubLink: "https://github.com/MangeshChaudhari2000/PerformYardApp",
-    demoLink:"https://performyardapp.onrender.com/"
+    demoLink: "https://mangeshestate.onrender.com/",
   },
 
   {
@@ -71,40 +70,39 @@ export const PROJECTS = [
       "A E-commerce application that fetches data from fakestoreapi, where User can  logi, add item to there cart & place there order",
     image: busybuyContext,
     githubLink: "https://github.com/MangeshChaudhari2000/busybuyContext",
-    demoLink:'https://busybuycontext.onrender.com/'
+    demoLink: "https://busybuycontext.onrender.com/",
   },
-  
 ];
 
 export const BIO = [
-  "Full-Stack Development: Proficient in Node.js and C#, utilizing Express and React.js to design and implement responsive web applications.",
-  "Database Management: Skilled in MySQL, MongoDB, Mongoose, and Google Firebase Firestore for efficient data storage and retrieval, ensuring optimal performance and scalability.",
-  "DevOps Practices: Developed and maintained CI/CD pipelines to automate deployment processes, enhancing code quality and reducing time-to-market.",
-  "Collaboration: Effectively communicated with cross-functional teams to gather requirements, share progress, and ensure alignment on project objectives",
+  "Full-Stack Development: Proficient in developing scalable web applications using React.js, Next.js, Node.js, Redux Toolkit, and AWS services, with hands-on experience in backend development (Node.js/Express) and frontend technologies (React, Tailwind CSS).",
+  "Database Management: Skilled in working with SQL and NoSQL databases, including MySQL, MongoDB, Google Firestore, and AWS DynamoDB, ensuring optimal data storage, retrieval, and performance for dynamic applications.",
+  "Cloud and DevOps: Experienced in deploying serverless architectures on AWS (Lambda, DynamoDB, API Gateway) and containerizing applications with Docker, while utilizing DevOps tools like Jenkins, VMware, and IBM UrbanCode for efficient CI/CD pipelines.",
+  "Security & Testing Focus: Implemented proactive security measures with Snyk for vulnerability management and automated testing using Jest for Node.js and React applications, ensuring high code quality and reliable functionality.",
 ];
 
 export const SKILLS = [
   {
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
-    experience: "1+ years",
+    experience: "3+ years",
   },
   {
-    icon: <RiTailwindCssFill className="text-4xl text-sky-600 lg:text-5xl" />,
-    name: "Tailwind CSS",
+    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "Node.js",
+    experience: "3+ years",
+  },
+  {
+    icon: <SiNextdotjs className="text-4xl text-white lg:text-5xl" />,
+    name: "NextJs",
     experience: "1+ years",
   },
   {
     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
     name: "MongoDB",
-    experience: "1+ years",
-  },
-
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
     experience: "2+ years",
   },
+
   {
     icon: (
       <SiMicrosoftsqlserver className="text-4xl text-sky-700 lg:text-5xl" />
@@ -113,7 +111,20 @@ export const SKILLS = [
     experience: "3+ year",
   },
   {
-    icon: <TbBrandFramerMotion className="text-4xl text-pink-600 lg:text-5xl" />,
+    icon: <FaAws className="text-4xl text-white lg:text-5xl" />,
+    name: "AWS",
+    experience: "1 year",
+  },
+  {
+    icon: <RiTailwindCssFill className="text-4xl text-sky-600 lg:text-5xl" />,
+    name: "Tailwind CSS",
+    experience: "3+ years",
+  },
+
+  {
+    icon: (
+      <TbBrandFramerMotion className="text-4xl text-pink-600 lg:text-5xl" />
+    ),
     name: "Framer motion",
     experience: "6+ month",
   },
