@@ -17,7 +17,6 @@ import { SiCsharp } from "react-icons/si";
 import PerformYard from "../assets/performYard.PNG";
 import MangeshEstate from "../assets/mangeshEstate.PNG";
 import EduForge from "../assets/EduForge.PNG";
-import Nextjs from "../assets/nextjs.png";
 
 import busybuyContext from "../assets/busybuyContext.PNG";
 import { TbBrandFramerMotion } from "react-icons/tb";
